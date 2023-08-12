@@ -2,7 +2,6 @@ import styles from "./TasksContainer.module.css";
 import { Task } from "./Task";
 import { Clipboard } from "./Clipboard";
 import { TasksType } from "./TodoList";
-// import { useState } from "react";
 
 interface TasksContainerProps {
   tasks: TasksType[];
@@ -15,12 +14,12 @@ export function TasksContainer({
   deleteTask,
   checkTask,
 }: TasksContainerProps) {
-  function onDeleteTask(taskToDelete: TasksType) {
-    deleteTask(taskToDelete);
-  }
-
   function onCheckTask(taskToCheck: TasksType) {
     checkTask(taskToCheck);
+  }
+
+  function onDeleteTask(taskToDelete: TasksType) {
+    deleteTask(taskToDelete);
   }
 
   return (
