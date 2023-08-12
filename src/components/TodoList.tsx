@@ -26,6 +26,17 @@ export function TodoList() {
     setTasks([...tasks, taskToCreate]);
   }
 
+  function checkTask(taskToCheck: TasksType) {
+    const taskToCheckIndex = tasks.findIndex(
+      (task) => task.id === taskToCheck.id
+    );
+
+    const newTasks = [...tasks];
+
+    newTasks[taskToCheckIndex].check = taskToCheck.check;
+    setTasks(newTasks);
+  }
+
   function deleteTask(taskToDelete: TasksType) {
     const taskWithoutDeletedOne = tasks.filter(
       (task) => task.id !== taskToDelete.id
@@ -37,7 +48,11 @@ export function TodoList() {
     <div>
       <Input createNewTask={createNewTask} />
       <TasksHeader tasks={tasks} />
-      <TasksContainer tasks={tasks} deleteTask={deleteTask} />
+      <TasksContainer
+        tasks={tasks}
+        deleteTask={deleteTask}
+        checkTask={checkTask}
+      />
     </div>
   );
 }

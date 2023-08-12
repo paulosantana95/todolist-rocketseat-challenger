@@ -6,6 +6,11 @@ interface TasksHeaderProps {
 }
 
 export function TasksHeader({ tasks }: TasksHeaderProps) {
+  function checkCompletedTasks() {
+    const completedTasks = tasks.filter((tasks) => tasks.check === true).length;
+    return completedTasks;
+  }
+
   return (
     <div className={styles.headerTasks}>
       <div className={styles.createdTasks}>
@@ -14,7 +19,7 @@ export function TasksHeader({ tasks }: TasksHeaderProps) {
       </div>
       <div className={styles.completedTasks}>
         <h3>Concluídas</h3>
-        <span>0</span>
+        <span>{`${checkCompletedTasks()} de ${tasks.length}`}</span>
       </div>
     </div>
   );

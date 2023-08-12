@@ -7,11 +7,20 @@ import { TasksType } from "./TodoList";
 interface TasksContainerProps {
   tasks: TasksType[];
   deleteTask: (taskToDelete: TasksType) => void;
+  checkTask: (taskToCheck: TasksType) => void;
 }
 
-export function TasksContainer({ tasks, deleteTask }: TasksContainerProps) {
+export function TasksContainer({
+  tasks,
+  deleteTask,
+  checkTask,
+}: TasksContainerProps) {
   function onDeleteTask(taskToDelete: TasksType) {
     deleteTask(taskToDelete);
+  }
+
+  function onCheckTask(taskToCheck: TasksType) {
+    checkTask(taskToCheck);
   }
 
   return (
@@ -20,7 +29,14 @@ export function TasksContainer({ tasks, deleteTask }: TasksContainerProps) {
         <Clipboard />
       ) : (
         tasks.map((task) => {
-          return <Task key={task.id} task={task} onDeleteTask={onDeleteTask} />;
+          return (
+            <Task
+              key={task.id}
+              task={task}
+              onDeleteTask={onDeleteTask}
+              onCheckTask={onCheckTask}
+            />
+          );
         })
       )}
     </div>
