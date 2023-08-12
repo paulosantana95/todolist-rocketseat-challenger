@@ -1,27 +1,23 @@
-# React + TypeScript + Vite
+# To-doList React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto foi criado para completar o desafio da criação de uma TodoList feita com React utilizando o Vite para iniciação do projeto.
 
-Currently, two official plugins are available:
+# Fundamentos Práticados
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Estados
+- Imutabilidade do estado
+- Listas e chaves no ReactJS
+- Propriedades
+- Componentização
 
-## Expanding the ESLint configuration
+# Funcionalidades aplicadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Adicionar uma nova tarefa
+- Marcar e desmarcar uma tarefa como concluída
+- Remover uma tarefa da listagem
+- Mostrar o progresso de conclusão das tarefas
 
-- Configure the top-level `parserOptions` property like this:
+# Layout do Projeto:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+![image](https://github.com/paulosantana95/todolist-rocketseat-challenger/assets/91387292/0854d813-52a2-4acf-86f9-afa7e51d253a)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
