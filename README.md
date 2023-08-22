@@ -1,23 +1,30 @@
-# To-doList React
+# Countdown - React
 
-Esse projeto foi criado para completar o desafio da criação de uma TodoList feita com React utilizando o Vite para iniciação do projeto.
+Projeto feito para práticar fundamentos mais avançados do React no curso Ignite da @rocketseat
 
+---
 # Fundamentos Práticados
 
 - Estados
-- Imutabilidade do estado
-- Listas e chaves no ReactJS
-- Propriedades
-- Componentização
+- Paginas e Rotas
+- Formaulários
+- Context API
+- Reducers e Actions
 
 # Funcionalidades aplicadas
 
-- Adicionar uma nova tarefa
-- Marcar e desmarcar uma tarefa como concluída
-- Remover uma tarefa da listagem
-- Mostrar o progresso de conclusão das tarefas
+- Countdown com uso de SPA
+- Comçea, interrompe e finaliza
+- Registra os contadores no local storage do browser
+- Renderiza o histórico dos contadores
 
+---
 # Layout do Projeto:
 
-![image](https://github.com/paulosantana95/todolist-rocketseat-challenger/assets/91387292/0854d813-52a2-4acf-86f9-afa7e51d253a)
+![image](https://github.com/paulosantana95/todolist-rocketseat-challenger/assets/91387292/4ceeca7f-5030-48be-aac4-1329095e583e)
+
+
+![image](https://github.com/paulosantana95/todolist-rocketseat-challenger/assets/91387292/ad0acff6-9f1b-4c65-9757-c9fc205f9d9e)
+
+
 
