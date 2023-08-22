@@ -2,7 +2,7 @@
 
 Esse projeto foi criado para completar o desafio da criação de uma TodoList feita com React utilizando o Vite para iniciação do projeto.
 
----
+
 # Fundamentos Práticados
 
 - Estados
@@ -11,7 +11,7 @@ Esse projeto foi criado para completar o desafio da criação de uma TodoList fe
 - Propriedades
 - Componentização
 
----
+
 # Funcionalidades aplicadas
 
 - Adicionar uma nova tarefa
